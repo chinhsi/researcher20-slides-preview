@@ -29,8 +29,8 @@
             --green-ok: #4ade80;
             --green-glow: rgba(74, 222, 128, 0.2);
 
-            --font-display: 'LXGW WenKai TC', serif;
-            --font-body: 'Noto Sans TC', sans-serif;
+            --font-display: 'LXGW WenKai TC', 'Noto Serif TC', 'PingFang TC', 'Microsoft JhengHei', serif;
+            --font-body: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
             --title-size: clamp(1.8rem, 5.5vw, 4rem);
             --h2-size: clamp(1.4rem, 3.5vw, 2.8rem);
             --h3-size: clamp(1rem, 2.2vw, 1.5rem);
@@ -276,6 +276,8 @@
             font-size: clamp(1.6rem, 5vw, 3.5rem);
             background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-warm));
             -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            /* Fallback: if gradient text fails, show solid color */
+            color: var(--accent-warm);
         }
 
         /* --- Progress Bar --- */
