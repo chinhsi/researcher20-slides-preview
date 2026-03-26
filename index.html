@@ -545,13 +545,17 @@
                     </text>
 
                     <!-- ANOVA result badge -->
-                    <rect x="140" y="215" width="160" height="24" rx="12" fill="rgba(74, 222, 128, 0.15)" stroke="#4ade80" stroke-width="1" opacity="0">
+                    <rect x="120" y="215" width="200" height="26" rx="13" fill="rgba(74, 222, 128, 0.15)" stroke="#4ade80" stroke-width="1" opacity="0">
                         <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.9s"/>
                     </rect>
-                    <text x="220" y="232" fill="#4ade80" font-size="11" text-anchor="middle" opacity="0" font-family="'Noto Sans TC', sans-serif">
-                        ANOVA p &lt; .05 ✓
+                    <text x="208" y="233" fill="#4ade80" font-size="12" text-anchor="middle" opacity="0" font-family="'Noto Sans TC', sans-serif" letter-spacing="0.5">
+                        ANOVA p &lt; .05
                         <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.9s"/>
                     </text>
+                    <!-- Check mark icon instead of emoji -->
+                    <polyline points="302,224 308,231 318,220" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0">
+                        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.9s"/>
+                    </polyline>
                 </svg>
             </div>
             <p class="reveal" style="text-align: center; max-width: min(80vw, 500px); margin: var(--element-gap) auto 0;">
