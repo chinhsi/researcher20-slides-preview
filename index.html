@@ -433,11 +433,18 @@
                     <line x1="190" y1="83" x2="190" y2="152" stroke="#d4a853" stroke-width="2" stroke-dasharray="6 4" class="regression-line" style="stroke-dasharray: 100; stroke-dashoffset: 100;"/>
 
                     <!-- Labels on right -->
-                    <text x="280" y="70" fill="#e85454" font-size="13" font-family="'Noto Sans TC', sans-serif">❌ Independent T-test</text>
-                    <text x="280" y="95" fill="#e85454" font-size="11" font-family="'Noto Sans TC', sans-serif">忽略了配對關係</text>
+                    <!-- Red X icon -->
+                    <circle cx="290" cy="65" r="12" fill="rgba(232, 84, 84, 0.2)" stroke="#e85454" stroke-width="2"/>
+                    <line x1="284" y1="59" x2="296" y2="71" stroke="#e85454" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="296" y1="59" x2="284" y2="71" stroke="#e85454" stroke-width="2.5" stroke-linecap="round"/>
+                    <text x="310" y="70" fill="#e85454" font-size="13" font-family="'Noto Sans TC', sans-serif">Independent T-test</text>
+                    <text x="310" y="90" fill="#e85454" font-size="11" font-family="'Noto Sans TC', sans-serif">忽略了配對關係</text>
 
-                    <text x="280" y="165" fill="#4ade80" font-size="13" font-family="'Noto Sans TC', sans-serif">✅ Paired T-test</text>
-                    <text x="280" y="190" fill="#4ade80" font-size="11" font-family="'Noto Sans TC', sans-serif">同一批人，兩次測量</text>
+                    <!-- Green check icon -->
+                    <circle cx="290" cy="165" r="12" fill="rgba(74, 222, 128, 0.2)" stroke="#4ade80" stroke-width="2"/>
+                    <polyline points="284,165 288,170 297,160" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text x="310" y="170" fill="#4ade80" font-size="13" font-family="'Noto Sans TC', sans-serif">Paired T-test</text>
+                    <text x="310" y="190" fill="#4ade80" font-size="11" font-family="'Noto Sans TC', sans-serif">同一批人，兩次測量</text>
                 </svg>
             </div>
             <div class="reviewer-box reveal" style="margin-top: var(--content-gap);">
